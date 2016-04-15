@@ -15,6 +15,10 @@ matrix:
         - python: pypy
           env: TOXENV=py-uwsgi
 
+os:
+    - linux
+    - osx
+
 install:
     # Travis uses an outdated PyPy, this installs the most recent one.
     # This makes the tests run on Travis' legacy infrastructure, but so be it.
